@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrapuri Heritage Resort - Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-container {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        /* Tables for email compatibility */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .header-table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .logo {
+            width: 90px;
+            height: auto;
+        }
+        
+        .company-info {
+            text-align: right;
+            font-size: 13px;
+            line-height: 1.3;
+            vertical-align: top;
+        }
+        
+        .company-name {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        /* Two column sections */
+        .details-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .details-table td {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 15px;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #666;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 3px;
+        }
+        
+        .detail-item {
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+            vertical-align: top;
+        }
+        
+        /* Invoice section */
+        .invoice-header {
+            background-color: #6b7d5a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            width: 100%;
+            margin: 20px 0 15px 0;
+        }
+        
+        .invoice-table-wrapper {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .invoice-table {
+            border-collapse: collapse;
+            font-size: 13px;
+            margin: 0 auto;
+            max-width: 550px;
+            display: inline-table;
+        }
+        
+        .invoice-table td, .invoice-table th {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            text-align: left;
+        }
+        
+        .invoice-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        /* Bottom sections */
+        .bottom-table {
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .bottom-table td {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 15px;
+        }
+        
+        .transfer-subsection {
+            margin-bottom: 12px;
+        }
+        
+        .transfer-title {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #666;
+        }
+        
+        /* Notes section */
+        .notes-header {
+            background-color: #6b7d5a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0 15px 0;
+        }
+        
+        .issued-by {
+            margin-bottom: 15px;
+        }
+        
+        .issued-by-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .notes-content {
+            font-size: 13px;
+        }
+        
+        .notes-content p {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .notes-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        
+        /* Print media */
+        @media print {
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+            
+            body {
+                font-size: 13px;
+            }
+            
+            .container {
+                padding: 0;
+            }
+            
+            .main-container {
+                max-width: 100%;
+            }
+        }
+        
+        /* Mobile responsiveness */
+        @media screen and (max-width: 600px) {
+            .details-table td,
+            .bottom-table td {
+                display: block;
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .logo {
+                width: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <!-- Header -->
+            <table class="header-table">
+                <tr>
+                    <td style="width: 50%; vertical-align: top;">
+                        <img src="https://terrapimba.com/wp-content/uploads/2025/08/Terrapuri-Logo-2-scaled.png" alt="Terrapuri Logo" class="logo">
+                    </td>
+                    <td style="width: 50%; vertical-align: top;">
+                        <div class="company-info">
+                            <div class="company-name">Terrapuri Heritage Resort</div>
+                            <div>Kampung Mangkuk, 22120 Setiu, Terengganu, Malaysia</div>
+                            <div>www.terrapuri.com</div>
+                            <div>sales@terrapuri.com</div>
+                            <div>+609-624 5020</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Booking Details and Booked By -->
+            <table class="details-table">
+                <tr>
+                    <td>
+                        <div class="section-title">Booking Details</div>
+                        <div class="detail-item"><span class="detail-label">Date:</span> [resa_received_on]</div>
+                        <div class="detail-item"><span class="detail-label">Booking ID:</span> [resa_id]</div>
+                        <div class="detail-item"><span class="detail-label">Invoice ID:</span> [resa_invoice_id]</div>
+                        <div class="detail-item"><span class="detail-label">Check in:</span> [resa_check_in]</div>
+                        <div class="detail-item"><span class="detail-label">Check out:</span> [resa_check_out]</div>
+                        <div class="detail-item"><span class="detail-label">Guests:</span> [resa_adults] adult(s), [resa_children] child(ren)</div>
+                        <div class="detail-item"><span class="detail-label">Villa type:</span> [resa_accommodation]</div>
+                        <div class="detail-item"><span class="detail-label">Assigned villa name:</span> [resa_accommodation_num]</div>
+                    </td>
+                    <td>
+                        <div class="section-title">Booked By</div>
+                        <div class="detail-item"><span class="detail-label">Name:</span> [customer_first_name] [customer_last_name]</div>
+                        <div class="detail-item"><span class="detail-label">Email:</span> [customer_email]</div>
+                        <div class="detail-item"><span class="detail-label">Phone number:</span> [customer_phone]</div>
+                        <div class="detail-item"><span class="detail-label">Address:</span> [customer_address_1], [customer_address_2], [customer_zip_code], [customer_city], [customer_state_province], [customer_country]</div>
+                        <div class="detail-item"><span class="detail-label">Whatsapp availability:</span> [customer_contact_whatsapp]</div>
+                        <div class="detail-item"><span class="detail-label">Special requests:</span> [customer_special_requests]</div>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Invoice Section -->
+            <div class="invoice-header">Invoice</div>
+            <div class="invoice-table-wrapper">
+                [resa_invoice_table]
+            </div>
+            
+            <!-- Additional Info and Van Transfers -->
+            <table class="bottom-table">
+                <tr>
+                    <td>
+                        <div class="section-title">Additional info</div>
+                        <div class="detail-item"><span class="detail-label">Payment type:</span> [resa_payment_type]</div>
+                        <div class="detail-item"><span class="detail-label">Paid at:</span> [resa_payment_gateway] on [resa_origin]</div>
+                        <div class="detail-item"><span class="detail-label">Comments:</span> none</div>
+                    </td>
+                    <td>
+                        <div class="section-title">Van transfers (if any)</div>
+                        <div class="transfer-subsection">
+                            <div class="transfer-title">From pickup location to Terrapuri</div>
+                            <div class="detail-item"><span class="detail-label">Pick up location:</span> [customer_pick_up_location]</div>
+                            <div class="detail-item"><span class="detail-label">Pick up date:</span> [customer_pick_up_date]</div>
+                            <div class="detail-item"><span class="detail-label">Flight details:</span> [customer_flight_details]</div>
+                        </div>
+                        <div class="transfer-subsection">
+                            <div class="transfer-title">From Terrapuri to drop off location</div>
+                            <div class="detail-item"><span class="detail-label">Drop off location:</span> [customer_drop_off_location]</div>
+                            <div class="detail-item"><span class="detail-label">Drop off date:</span> [customer_drop_off_date]</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Notes Section -->
+            <div class="notes-header">Notes</div>
+            
+            <div class="issued-by">
+                <div class="issued-by-title">Issued by</div>
+                <div>• Terrapuri e-Booking System</div>
+            </div>
+            
+            <div class="notes-content">
+                <div class="notes-title">Notes</div>
+                <p>• <strong>Check-in is after 2:00 PM and check-out is by 12:00 PM</strong></p>
+                <p>• This is a computer-generated e-voucher, no signature is required. Please present it upon check-in.</p>
+                <p>• Guests must comply with all regulations and SOPs. Terrapuri accepts no responsibility for loss, damage, or injury (including fatal) to persons or personal effects. Guests are expected to have their own travel insurance.</p>
+                <p>• Due to Terrapuri's classic heritage architecture, the property may not be suitable for physically challenged guests or young children.</p>
+                <p>• All bookings are strictly non-refundable.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
